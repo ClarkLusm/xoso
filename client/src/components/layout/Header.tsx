@@ -7,13 +7,13 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/">
-          <a className="flex items-center space-x-2">
+          <a className="flex items-center space-x-2" title="Trang chủ Xổ Số Đại Phát">
             <div className="bg-primary text-primary-foreground p-1.5 rounded-lg">
-              <Ticket className="h-6 w-6" />
+              <Ticket className="h-6 w-6" aria-hidden="true" />
             </div>
-            <span className="text-xl font-bold tracking-tight text-foreground font-serif">
+            <p className="text-xl font-bold tracking-tight text-foreground font-serif">
               Xổ Số <span className="text-primary">Đại Phát</span>
-            </span>
+            </p>
           </a>
         </Link>
 

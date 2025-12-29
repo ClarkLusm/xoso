@@ -25,11 +25,11 @@ export function LotteryTable({ result }: LotteryTableProps) {
       <div className="bg-gradient-to-r from-lottery-red to-red-600 p-4 sm:p-6 text-white flex justify-between items-center">
         <div>
           <h2 className="text-xl sm:text-2xl font-bold font-serif mb-1">
-            Xổ Số {result.region === 'MB' ? 'Miền Bắc' : result.province}
+            Kết quả xổ số {result.region === 'MB' ? 'Miền Bắc' : result.province}
           </h2>
-          <p className="text-red-100 text-sm sm:text-base font-medium opacity-90">
+          <time dateTime={result.date} className="text-red-100 text-sm sm:text-base font-medium opacity-90">
             {new Date(result.date).toLocaleDateString('vi-VN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
+          </time>
         </div>
         <div className="flex gap-2">
            <Button size="icon" variant="secondary" className="bg-white/10 hover:bg-white/20 text-white border-0" onClick={handleCopy}>
