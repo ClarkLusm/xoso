@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import SearchPage from "@/pages/search";
 import SchedulePage from "@/pages/schedule";
 import DreamPage from "@/pages/dream";
+import ArticlePage from "@/pages/article";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/search" component={SearchPage} />
       <Route path="/schedule" component={SchedulePage} />
       <Route path="/so-mo" component={DreamPage} />
+      <Route path="/article/:slug" component={ArticlePage} />
       <Route path="/:region" component={Home} />
       <Route component={NotFound} />
     </Switch>

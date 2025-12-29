@@ -98,21 +98,27 @@ export default function Home() {
         <section className="py-12 bg-muted/30 border-y">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="p-6 hover:shadow-lg transition-shadow border-none bg-gradient-to-br from-blue-50 to-white dark:from-blue-950/20 dark:to-card">
-                <h3 className="text-xl font-bold mb-2 text-blue-700">Thống Kê VIP</h3>
-                <p className="text-muted-foreground mb-4">Phân tích tần suất lô tô, gan cực đại, đầu đuôi.</p>
-                <Button variant="link" className="px-0 text-blue-600">Xem ngay &rarr;</Button>
-              </Card>
-              <Card className="p-6 hover:shadow-lg transition-shadow border-none bg-gradient-to-br from-purple-50 to-white dark:from-purple-950/20 dark:to-card">
-                <h3 className="text-xl font-bold mb-2 text-purple-700">Sổ Mơ</h3>
-                <p className="text-muted-foreground mb-4">Giải mã giấc mơ, tìm ra con số may mắn của bạn.</p>
-                <Button variant="link" className="px-0 text-purple-600">Tra cứu &rarr;</Button>
-              </Card>
-              <Card className="p-6 hover:shadow-lg transition-shadow border-none bg-gradient-to-br from-amber-50 to-white dark:from-amber-950/20 dark:to-card">
-                <h3 className="text-xl font-bold mb-2 text-amber-700">Quay Thử</h3>
-                <p className="text-muted-foreground mb-4">Thử vận may với hệ thống quay số ngẫu nhiên chuẩn xác.</p>
-                <Button variant="link" className="px-0 text-amber-600">Quay ngay &rarr;</Button>
-              </Card>
+              <Link href="/article/thong-ke-vip">
+                <Card className="p-6 hover:shadow-lg transition-shadow border-none bg-gradient-to-br from-blue-50 to-white dark:from-blue-950/20 dark:to-card h-full cursor-pointer">
+                  <h3 className="text-xl font-bold mb-2 text-blue-700">Thống Kê VIP</h3>
+                  <p className="text-muted-foreground mb-4">Phân tích tần suất lô tô, gan cực đại, đầu đuôi.</p>
+                  <Button variant="link" className="px-0 text-blue-600">Xem ngay &rarr;</Button>
+                </Card>
+              </Link>
+              <Link href="/article/so-mo">
+                <Card className="p-6 hover:shadow-lg transition-shadow border-none bg-gradient-to-br from-purple-50 to-white dark:from-purple-950/20 dark:to-card h-full cursor-pointer">
+                  <h3 className="text-xl font-bold mb-2 text-purple-700">Sổ Mơ</h3>
+                  <p className="text-muted-foreground mb-4">Giải mã giấc mơ, tìm ra con số may mắn của bạn.</p>
+                  <Button variant="link" className="px-0 text-purple-600">Tra cứu &rarr;</Button>
+                </Card>
+              </Link>
+              <Link href="/article/quay-thu">
+                <Card className="p-6 hover:shadow-lg transition-shadow border-none bg-gradient-to-br from-amber-50 to-white dark:from-amber-950/20 dark:to-card h-full cursor-pointer">
+                  <h3 className="text-xl font-bold mb-2 text-amber-700">Quay Thử</h3>
+                  <p className="text-muted-foreground mb-4">Thử vận may với hệ thống quay số ngẫu nhiên chuẩn xác.</p>
+                  <Button variant="link" className="px-0 text-amber-600">Quay ngay &rarr;</Button>
+                </Card>
+              </Link>
             </div>
           </div>
         </section>
