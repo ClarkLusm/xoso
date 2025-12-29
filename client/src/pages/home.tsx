@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { RegionSelector } from "@/components/lottery/RegionSelector";
@@ -40,13 +41,17 @@ export default function Home() {
                   Tra cứu kết quả xổ số nhanh chóng, chính xác. Thống kê, soi cầu, và sổ mơ toàn diện nhất Việt Nam.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <Button size="lg" className="bg-lottery-red hover:bg-red-600 h-12 px-8 text-base shadow-lg shadow-red-500/25">
-                    Tra Cứu Ngay
-                  </Button>
-                  <Button size="lg" variant="outline" className="h-12 px-8 text-base bg-background/50 backdrop-blur">
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    Xem Lịch Quay
-                  </Button>
+                  <Link href="/search">
+                    <Button size="lg" className="bg-lottery-red hover:bg-red-600 h-12 px-8 text-base shadow-lg shadow-red-500/25 w-full sm:w-auto">
+                      Tra Cứu Ngay
+                    </Button>
+                  </Link>
+                  <Link href="/schedule">
+                    <Button size="lg" variant="outline" className="h-12 px-8 text-base bg-background/50 backdrop-blur w-full sm:w-auto">
+                      <CalendarIcon className="mr-2 h-4 w-4" />
+                      Xem Lịch Quay
+                    </Button>
+                  </Link>
                 </div>
                 
                 <div className="pt-8 flex justify-center lg:justify-start gap-8 text-sm font-medium text-muted-foreground">

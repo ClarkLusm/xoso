@@ -19,9 +19,8 @@ export function Header() {
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           <Link href="/"><a className="transition-colors hover:text-primary">Trang Chủ</a></Link>
-          <Link href="/mb"><a className="transition-colors hover:text-primary">Miền Bắc</a></Link>
-          <Link href="/mt"><a className="transition-colors hover:text-primary">Miền Trung</a></Link>
-          <Link href="/mn"><a className="transition-colors hover:text-primary">Miền Nam</a></Link>
+          <Link href="/search"><a className="transition-colors hover:text-primary">Tra Cứu</a></Link>
+          <Link href="/schedule"><a className="transition-colors hover:text-primary">Lịch Quay</a></Link>
           <Link href="/so-mo"><a className="transition-colors hover:text-primary">Sổ Mơ</a></Link>
         </nav>
 
